@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Bootstrap starter</title>
+    <title>Hafta kunlari</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-    <div class="container text-center">Lorem ipsum dolor sit amet.</div>
 
+    <div class="container">
+        <h4 class="text-center mt-5 text-secondary">Hafta kunlari</h4>
+        <form class="week__form d-flex flex-column justify-content-center align-items-start w-50 ml-auto mr-auto" action="https://echo.htmlacademy.ru" method="POST">
+            <label class="text-secondary" for="week-input">Son kiritish</label>
+            <input class="form-control form-control-sm week__num-input mb-2" type="number" name="number" id="week-input" required>
+            <button class="btn btn-outline-primary mb-2" type="submit">Ko'rish</button>
+            <div class="week__day mb-2 text-warning"></div>
+        </form>
+    </div>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
